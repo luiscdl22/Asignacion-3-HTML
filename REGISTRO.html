@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Encabezado de la página-->
     <meta charset="UTF-8" />
     <title>Registro - Salud Vital</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Aquí se puede agregar un style en el head o en línea para la imagen de fondo vegetales.png -->
   </head>
   <body>
-    <!-- Menú de navegación igual en todas las páginas -->
+    <!-- Encabezado con el título principal "Salud Vital" -->
+    <header>
+      <h1>Salud Vital</h1>
+    </header>
+
+    <!-- Barra de navegación -->
     <nav>
+      <!-- Lista de navegación usando <ul> (Home, Blog, Registro, Contactanos) -->
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="registro.html">Registro</a></li>
-        <li><a href="contacto.html">Contáctanos</a></li>
+        <!-- Enlaces en negrita usando etiqueta <b> -->
+        <li>
+          <a href="HOME.html"><b>Home</b></a>
+        </li>
+        <li>
+          <a href="BLOG.html"><b>Blog</b></a>
+        </li>
+        <li>
+          <a href="REGISTRO.html"><b>Registro</b></a>
+        </li>
+        <li>
+          <a href="CONTACTO.html"><b>Contáctanos</b></a>
+        </li>
       </ul>
     </nav>
 
@@ -140,16 +155,32 @@
 
     <!-- Pie de página igual en todas las páginas -->
     <footer>
-      <ul>
-        <li><a href="faq.html">Preguntas frecuentes</a></li>
-        <li><a href="privacidad.html">Política de privacidad</a></li>
-        <li><a href="terminos.html">Términos y condiciones</a></li>
-      </ul>
-      <label for="idioma">Idioma:</label>
-      <select id="idioma" name="idioma">
-        <option value="es">Español</option>
-        <option value="en">English</option>
-      </select>
+      <!-- Aquí se organizan los elementos del footer horizontalmente usando flexbox -->
+      <div>
+        <!-- Lista desordenada <ul> para enlaces adicionales -->
+        <ul>
+          <!-- Enlaces en negrita usando etiqueta <b> -->
+          <li>
+            <a href="faq.html"><b>Preguntas frecuentes</b></a>
+          </li>
+          <li>
+            <a href="privacidad.html"><b>Política de privacidad</b></a>
+          </li>
+          <li>
+            <a href="terminos.html"><b>Términos y condiciones</b></a>
+          </li>
+        </ul>
+        <!-- Selector de idioma usando dropdown, aparece los idiomas "Español e Inglés" -->
+        <div>
+          <label for="idioma">Idioma:</label>
+          <select id="idioma" name="idioma">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <!-- Aqui se agrega el copyright jeje -->
+        <p>&copy; 2025 Salud Vital. Todos los derechos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>

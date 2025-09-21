@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Encabezado de la página-->
     <meta charset="UTF-8" />
     <title>Blog - Salud Vital</title>
     <style>
@@ -9,14 +10,12 @@
         background-size: cover;
         background-repeat: no-repeat;
         color: #070000;
-        font-family: Arial, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 0;
       }
 
-      header,
-      main,
-      footer {
+      main {
         background-color: rgba(41, 206, 55, 0.8);
         margin: 20px auto;
         padding: 20px;
@@ -26,30 +25,18 @@
         text-align: center;
       }
 
+      footer {
+        background-color: rgba(41, 206, 55, 0.8);
+        margin: 20px 0 0 0;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+      }
+
       h1,
       h2,
       h3 {
         color: #000000;
-      }
-
-      nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      }
-
-      nav a,
-      footer a {
-        color: #000a05;
-        text-decoration: none;
-      }
-
-      nav a:hover,
-      footer a:hover {
-        text-decoration: underline;
       }
 
       /* Centrar las listas manteniendo formato natural */
@@ -64,9 +51,6 @@
       table {
         text-align: center;
         margin: 20px auto;
-      }
-
-      table {
         border-collapse: collapse;
         width: 100%;
       }
@@ -83,17 +67,65 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>Salud Vital</h1>
-      <nav>
-        <ul>
-          <li><a href="HOME.html">Home</a></li>
-          <li><a href="BLOG.html">Blog</a></li>
-          <li><a href="REGISTRO.html">Registro</a></li>
-          <li><a href="CONTACTO.html">Contáctanos</a></li>
-        </ul>
-      </nav>
+    <header
+      style="
+        background-color: rgba(41, 206, 55, 0.8);
+        margin: 20px auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 960px;
+        border-radius: 10px;
+        text-align: center;
+      "
+    >
+      <h1
+        style="
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #000000;
+        "
+      >
+        Salud Vital
+      </h1>
     </header>
+
+    <!-- Barra de navegación -->
+    <nav
+      style="
+        background-color: rgba(41, 206, 55, 0.8);
+        padding: 10px;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 960px;
+        border-radius: 10px;
+        text-align: center;
+      "
+    >
+      <!-- Lista de navegación usando <ul> (Home, Blog, Registro, Contactanos) -->
+      <ul
+        style="
+          text-align: center;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        "
+      >
+        <!-- Enlaces en negrita usando etiqueta <b> -->
+        <li style="display: inline; margin-right: 15px">
+          <a href="HOME.html" style="color: #000a05"><b>Home</b></a>
+        </li>
+        <li style="display: inline; margin-right: 15px">
+          <a href="BLOG.html" style="color: #000a05"><b>Blog</b></a>
+        </li>
+        <li style="display: inline; margin-right: 15px">
+          <a href="REGISTRO.html" style="color: #000a05"><b>Registro</b></a>
+        </li>
+        <li style="display: inline; margin-right: 15px">
+          <a href="CONTACTO.html" style="color: #000a05"><b>Contáctanos</b></a>
+        </li>
+      </ul>
+    </nav>
 
     <main>
       <h2>Omelette de Verduras y Queso</h2>
@@ -164,7 +196,6 @@
     </main>
 
     <footer>
-      <hr />
       <!-- Aquí se organizan los elementos del footer horizontalmente usando flexbox -->
       <div
         style="
@@ -185,34 +216,53 @@
           "
         >
           <!-- Enlaces en negrita usando etiqueta <b> -->
-          <li style="font-family: Arial, Helvetica, sans-serif">
-            <a href="faq.html" style="color: #000a05"
+          <li
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 14px"
+          >
+            <a href="faq.html" style="color: black"
               ><b>Preguntas frecuentes</b></a
             >
           </li>
-          <li style="font-family: Arial, Helvetica, sans-serif">
-            <a href="privacidad.html" style="color: #000a05"
+          <li
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 14px"
+          >
+            <a href="privacidad.html" style="color: black"
               ><b>Política de privacidad</b></a
             >
           </li>
-          <li style="font-family: Arial, Helvetica, sans-serif">
-            <a href="terminos.html" style="color: #000a05"
+          <li
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 14px"
+          >
+            <a href="terminos.html" style="color: black"
               ><b>Términos y condiciones</b></a
             >
           </li>
         </ul>
         <!-- Selector de idioma usando dropdown, aparece los idiomas "Español e Inglés" -->
         <div style="display: flex; align-items: center; gap: 5px">
-          <label style="font-family: Arial, Helvetica, sans-serif" for="idioma"
+          <label
+            style="
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 14px;
+              color: black;
+            "
+            for="idioma"
             >Idioma:</label
           >
-          <select id="idioma" name="idioma">
+          <select id="idioma" name="idioma" style="font-size: 14px">
             <option value="es">Español</option>
             <option value="en">English</option>
           </select>
         </div>
-        <!-- Aqui se agrega el copyright -->
-        <p style="font-family: Arial, Helvetica, sans-serif; margin: 0">
+        <!-- Aqui se agrega el copyright jeje -->
+        <p
+          style="
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            font-size: 14px;
+            color: black;
+          "
+        >
           &copy; 2025 Salud Vital. Todos los derechos reservados.
         </p>
       </div>

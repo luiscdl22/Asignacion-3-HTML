@@ -10,30 +10,43 @@
   <!-- Fondo con color degradado verde-->
   <body
     style="
-      color: #046a52;
+      color: #070000;
       background: linear-gradient(to bottom, #a8e6cf, #dcedc1, #a8e6cf);
     "
   >
     <div style="width: 80%; margin: 0 auto">
       <!-- Encabezado con el título principal "Salud Vital" -->
-      <header>
+      <header
+        style="
+          background-color: rgba(41, 206, 55, 0.8);
+          margin: 20px auto;
+          padding: 20px;
+          width: 80%;
+          max-width: 960px;
+          border-radius: 10px;
+          text-align: center;
+        "
+      >
         <h1
           style="
-            display: flex;
-            justify-content: center;
+            margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            color: #000000;
           "
         >
           Salud Vital
         </h1>
       </header>
 
-      <!-- Navegación principal con menú para todas las páginas -->
+      <!-- Barra de navegación -->
       <nav
         style="
-          background-color: #046a52;
+          background-color: rgba(41, 206, 55, 0.8);
           padding: 10px;
-          margin-bottom: 20px;
+          margin: 20px auto;
+          width: 80%;
+          max-width: 960px;
+          border-radius: 10px;
           text-align: center;
         "
       >
@@ -49,22 +62,33 @@
         >
           <!-- Enlaces en negrita usando etiqueta <b>-->
           <li style="display: inline; margin-right: 15px">
-            <a href="HOME.html" style="color: white"><b>Home</b> </a>
+            <a href="HOME.html" style="color: #000a05"><b>Home</b></a>
           </li>
           <li style="display: inline; margin-right: 15px">
-            <a href="BLOG.html" style="color: white"><b>Blog</b> </a>
+            <a href="BLOG.html" style="color: #000a05"><b>Blog</b></a>
           </li>
           <li style="display: inline; margin-right: 15px">
-            <a href="REGISTRO.html" style="color: white"><b>Registro</b> </a>
+            <a href="REGISTRO.html" style="color: #000a05"><b>Registro</b></a>
           </li>
           <li style="display: inline; margin-right: 15px">
-            <a href="CONTACTO.html" style="color: white"><b>Contáctanos</b> </a>
+            <a href="CONTACTO.html" style="color: #000a05"
+              ><b>Contáctanos</b></a
+            >
           </li>
         </ul>
       </nav>
 
       <!-- Contenido principal de la página -->
-      <main>
+      <main
+        style="
+          background-color: rgba(41, 206, 55, 0.8);
+          margin: 20px auto;
+          padding: 20px;
+          width: 80%;
+          max-width: 960px;
+          border-radius: 10px;
+        "
+      >
         <!-- Sección introductoria del equipo -->
         <section>
           <h2
@@ -183,7 +207,7 @@
           >
             <div style="text-align: center; min-width: 200px">
               <img
-                src="img-home/member2.jpg"
+                src="img-Contactos/Traly Amaro.jpeg"
                 alt="Foto del Integrante 2"
                 style="width: 200px; height: 200px; object-fit: cover"
               />
@@ -229,8 +253,10 @@
                   line-height: 1.5;
                 "
               >
-                Estudiante de Licenciatura en Desarrollo y Gestión de Software,
-                enfocado en análisis de sistemas y gestión de proyectos.
+                Estudiante de la Universidad Tecnológica de Panamá. Nacido en
+                República Dominicana. Entre mis hobbies favoritos están
+                prácticar deportes como fútbol, basketball e ir al gimnasio. Soy
+                una persona respetable, considerada y sobretodo humilde.
               </p>
             </div>
           </div>
@@ -311,59 +337,89 @@
           </div>
         </section>
       </main>
-
-      <!-- Esto es el pie de página donde estarán los enlaces adicionales y selector de idioma -->
-      <footer style="text-align: center; margin-top: 50px">
-        <hr />
-        <!-- Aquí se organizan los elementos del footer horizontalmente usando flexbox -->
-        <div
-          style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap"
-        >
-          <!-- Enlaces adicionales: preguntas frecuentes, privacidad-->
-          <ul
-            style="
-              list-style: none;
-              padding: 0;
-              margin: 0;
-              display: flex;
-              gap: 15px;
-            "
-          >
-            <!-- Enlaces en negrita usando etiqueta <b> -->
-            <li style="font-family: Arial, Helvetica, sans-serif">
-              <a href="faq.html" style="color: #046a52"
-                ><b>Preguntas frecuentes</b></a
-              >
-            </li>
-            <li style="font-family: Arial, Helvetica, sans-serif">
-              <a href="privacidad.html" style="color: #046a52"
-                ><b>Política de privacidad</b></a
-              >
-            </li>
-            <li style="font-family: Arial, Helvetica, sans-serif">
-              <a href="terminos.html" style="color: #046a52"
-                ><b>Términos y condiciones</b></a
-              >
-            </li>
-          </ul>
-          <!-- Selector de idioma usando dropdown, aparece los idiomas "Español e Inglés" -->
-          <div style="display: flex; align-items: center; gap: 5px">
-            <label
-              style="font-family: Arial, Helvetica, sans-serif"
-              for="idioma"
-              >Idioma:</label
-            >
-            <select id="idioma" name="idioma">
-              <option value="es">Español</option>
-              <option value="en">English</option>
-            </select>
-          </div>
-          <!-- Aqui se agrega el copyright jeje -->
-          <p style="font-family: Arial, Helvetica, sans-serif; margin: 0">
-            &copy; 2025 Salud Vital. Todos los derechos reservados.
-          </p>
-        </div>
-      </footer>
     </div>
+
+    <!-- Esto es el pie de página donde estarán los enlaces adicionales y selector de idioma -->
+    <footer
+      style="
+        background-color: rgba(41, 206, 55, 0.8);
+        margin: 20px 0 0 0;
+        padding: 20px 20px 30px 20px;
+        width: 100%;
+        text-align: center;
+      "
+    >
+      <!-- Aquí se organizan los elementos del footer horizontalmente usando flexbox -->
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          flex-wrap: wrap;
+          justify-content: center;
+        "
+      >
+        <!-- Enlaces adicionales: preguntas frecuentes, privacidad-->
+        <ul
+          style="
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+          "
+        >
+          <!-- Enlaces en negrita usando etiqueta <b> -->
+          <li
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 14px"
+          >
+            <a href="faq.html" style="color: black"
+              ><b>Preguntas frecuentes</b></a
+            >
+          </li>
+          <li
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 14px"
+          >
+            <a href="privacidad.html" style="color: black"
+              ><b>Política de privacidad</b></a
+            >
+          </li>
+          <li
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 14px"
+          >
+            <a href="terminos.html" style="color: black"
+              ><b>Términos y condiciones</b></a
+            >
+          </li>
+        </ul>
+        <!-- Selector de idioma usando dropdown, aparece los idiomas "Español e Inglés" -->
+        <div style="display: flex; align-items: center; gap: 5px">
+          <label
+            style="
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 14px;
+              color: black;
+            "
+            for="idioma"
+            >Idioma:</label
+          >
+          <select id="idioma" name="idioma" style="font-size: 14px">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <!-- Aqui se agrega el copyright jeje -->
+        <p
+          style="
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            font-size: 14px;
+            color: black;
+          "
+        >
+          &copy; 2025 Salud Vital. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
