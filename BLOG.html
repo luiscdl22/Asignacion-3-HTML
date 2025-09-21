@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog - Salud Vital</title>
+    <style>
+      body {
+        background-image: url("Omelette.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #070000;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header,
+      main,
+      footer {
+        background-color: rgba(41, 206, 55, 0.8);
+        margin: 20px auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 960px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #000000;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      nav a,
+      footer a {
+        color: #000a05;
+        text-decoration: none;
+      }
+
+      nav a:hover,
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Centrar las listas manteniendo formato natural */
+      main ul,
+      main ol {
+        text-align: left;
+        margin: 20px auto;
+        max-width: 400px;
+        display: table;
+      }
+
+      table {
+        text-align: center;
+        margin: 20px auto;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Salud Vital</h1>
+      <nav>
+        <ul>
+          <li><a href="HOME.html">Home</a></li>
+          <li><a href="BLOG.html">Blog</a></li>
+          <li><a href="REGISTRO.html">Registro</a></li>
+          <li><a href="CONTACTO.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Omelette de Verduras y Queso</h2>
+      <img
+        src="omelette_receta.jpg"
+        alt="Un omelette de verduras saludable"
+        width="500"
+        height="300"
+      />
+      <p>
+        Un delicioso y nutritivo omelette es una excelente opción para cualquier
+        comida. Es fácil de preparar y se puede personalizar con tus verduras
+        favoritas.
+      </p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li>2 huevos grandes</li>
+        <li>1/4 taza de leche</li>
+        <li>1/4 taza de espinacas frescas</li>
+        <li>1/4 taza de pimientos picados</li>
+        <li>2 cucharadas de cebolla picada</li>
+        <li>Queso rallado al gusto</li>
+        <li>Sal y pimienta al gusto</li>
+      </ul>
+
+      <h3>Pasos de Preparación</h3>
+      <ol>
+        <li>En un tazón, bate los huevos, la leche, la sal y la pimienta.</li>
+        <li>
+          En una sartén, saltea las verduras picadas hasta que estén tiernas.
+        </li>
+        <li>Vierte la mezcla de huevo sobre las verduras.</li>
+        <li>
+          Cocina a fuego medio hasta que los bordes del omelette se separen de
+          la sartén.
+        </li>
+        <li>Espolvorea el queso sobre la mitad del omelette.</li>
+        <li>Dobla el omelette por la mitad y cocina por un minuto más.</li>
+      </ol>
+
+      <h3>Información Nutricional</h3>
+      <table>
+        <caption>
+          Tabla de Nutrientes Aproximados por Porción
+        </caption>
+        <tr>
+          <th>Nutriente</th>
+          <th>Cantidad</th>
+        </tr>
+        <tr>
+          <td>Calorías</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td>Proteínas</td>
+          <td>15 g</td>
+        </tr>
+        <tr>
+          <td>Grasas</td>
+          <td>18 g</td>
+        </tr>
+        <tr>
+          <td>Carbohidratos</td>
+          <td>5 g</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <hr />
+      <!-- Aquí se organizan los elementos del footer horizontalmente usando flexbox -->
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          justify-content: center;
+        "
+      >
+        <!-- Lista desordenada <ul> para enlaces adicionales -->
+        <ul
+          style="
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+          "
+        >
+          <!-- Enlaces en negrita usando etiqueta <b> -->
+          <li style="font-family: Arial, Helvetica, sans-serif">
+            <a href="faq.html" style="color: #000a05"
+              ><b>Preguntas frecuentes</b></a
+            >
+          </li>
+          <li style="font-family: Arial, Helvetica, sans-serif">
+            <a href="privacidad.html" style="color: #000a05"
+              ><b>Política de privacidad</b></a
+            >
+          </li>
+          <li style="font-family: Arial, Helvetica, sans-serif">
+            <a href="terminos.html" style="color: #000a05"
+              ><b>Términos y condiciones</b></a
+            >
+          </li>
+        </ul>
+        <!-- Selector de idioma usando dropdown, aparece los idiomas "Español e Inglés" -->
+        <div style="display: flex; align-items: center; gap: 5px">
+          <label style="font-family: Arial, Helvetica, sans-serif" for="idioma"
+            >Idioma:</label
+          >
+          <select id="idioma" name="idioma">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <!-- Aqui se agrega el copyright -->
+        <p style="font-family: Arial, Helvetica, sans-serif; margin: 0">
+          &copy; 2025 Salud Vital. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
