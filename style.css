@@ -1,0 +1,211 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo con imagen */
+body {
+  font-family: Arial, sans-serif;
+  background: url('images/vegetales.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navegación */
+nav {
+  background-color: rgba(34, 139, 34, 0.85); /* verde semitransparente */
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Contenido principal */
+main {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Título del formulario */
+form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #228B22;
+}
+
+/* Etiquetas */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Inputs, selects, textarea */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="number"],
+form input[type="time"],
+form select,
+form textarea,
+form input[type="file"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="date"]:focus,
+form input[type="number"]:focus,
+form input[type="time"]:focus,
+form select:focus,
+form textarea:focus,
+form input[type="file"]:focus {
+  border-color: #228B22;
+  outline: none;
+}
+
+/* Radio buttons y checkboxes */
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+  vertical-align: middle;
+}
+
+/* Labels para radio y checkbox inline */
+form label[for="mas"],
+form label[for="fem"],
+form label[for="otro"],
+form label[for="pp"],
+form label[for="gmm"],
+form label[for="ms"] {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+/* Rango de agua */
+form input[type="range"] {
+  width: 80%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+form output {
+  font-weight: bold;
+  vertical-align: middle;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Botón enviar */
+form button[type="submit"] {
+  background-color: #228B22;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto 0;
+  width: 50%;
+}
+
+form button[type="submit"]:hover {
+  background-color: #196619;
+}
+
+/* Pie de página */
+footer {
+  background-color: rgba(34, 139, 34, 0.85);
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #ffcc00;
+}
+
+footer label, footer select {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+footer select {
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  main {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  form button[type="submit"] {
+    width: 100%;
+  }
+}
