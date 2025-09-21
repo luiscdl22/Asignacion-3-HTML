@@ -1,54 +1,395 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Home - Salud Vital</title>
-</head>
-<body>
-  <!-- Menú de navegación igual en todas las páginas -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="registro.html">Registro</a></li>
-      <li><a href="contacto.html">Contáctanos</a></li>
-    </ul>
-  </nav>
+  <head>
+    <!-- Encabezado de la página-->
+    <meta charset="UTF-8" />
+    <title>Home - Salud Vital</title>
+    <link rel="icon" type="image/x-icon" href="img-home/logo.ico" />
+  </head>
 
-  <!-- Contenido principal Home -->
-  <main>
-    <!-- Título principal de la página -->
-    <!-- Aquí colocar: Salud Vital -->
+  <!-- Fondo con color degradado verde-->
+  <body
+    style="
+      color: #046a52;
+      background: linear-gradient(to bottom, #a8e6cf, #dcedc1, #a8e6cf);
+    "
+  >
+    <!-- Contenedor principal centrado al 80% del ancho -->
+    <div style="width: 80%; margin: 0 auto">
+      <!-- Encabezado con el título principal "Salud Vital" -->
+      <header>
+        <h1
+          style="
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+          "
+        >
+          Salud Vital
+        </h1>
+      </header>
 
-    <!-- Lista de temas de salud y alimentación (usar <ul>) -->
-    <!-- Título de esta sección: BLOG DE NOTICIAS -->
-    <!-- Aquí va la lista de temas relacionados -->
+      <!-- Navegación principal con menú para todas las páginas -->
+      <nav
+        style="
+          background-color: #046a52;
+          padding: 10px;
+          margin-bottom: 20px;
+          text-align: center;
+        "
+      >
+        <!-- Lista de navegación usando <ul> (Home, Blog, Registro, Contactanos) -->
+        <ul
+          style="
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+          "
+        >
+          <!-- Enlaces en negrita usando etiqueta <b> -->
+          <li style="display: inline; margin-right: 15px">
+            <a href="HOME.html" style="color: white"><b>Home</b> </a>
+          </li>
+          <li style="display: inline; margin-right: 15px">
+            <a href="BLOG.html" style="color: white"><b>Blog</b> </a>
+          </li>
+          <li style="display: inline; margin-right: 15px">
+            <a href="REGISTRO.html" style="color: white"><b>Registro</b> </a>
+          </li>
+          <li style="display: inline; margin-right: 15px">
+            <a href="CONTACTO.html" style="color: white"><b>Contáctanos</b> </a>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- Noticias: al menos tres contenedores -->
-    <!-- Cada noticia debe tener:
-         - Título
-         - Imagen o video
-         - Resumen en un párrafo
-         - Botón "Ver Más" que lleva a la fuente -->
-    <!-- Copia este bloque y repite para cada noticia -->
-    <!-- <div class="noticia">
-           ...contenido noticia...
-         </div>
-    -->
-  </main>
+      <!-- Contenido principal de la página -->
+      <main>
+        <!-- Sección: BLOG DE NOTICIAS con imagen de fondo-->
+        <section
+          style="
+            background-image: url('img-home/salud.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <!-- Capa blanca semi-transparente-->
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: rgba(255, 255, 255, 0.85);
+              z-index: 1;
+            "
+          ></div>
 
-  <!-- Pie de página igual en todas las páginas -->
-  <footer>
-    <ul>
-      <li><a href="faq.html">Preguntas frecuentes</a></li>
-      <li><a href="privacidad.html">Política de privacidad</a></li>
-      <li><a href="terminos.html">Términos y condiciones</a></li>
-    </ul>
-    <label for="idioma">Idioma:</label>
-    <select id="idioma" name="idioma">
-      <option value="es">Español</option>
-      <option value="en">English</option>
-    </select>
-  </footer>
-</body>
+          <!-- Contenido que aparece encima de la capa transparente -->
+          <div style="position: relative; z-index: 2">
+            <!-- Título principal de la sección -->
+            <h2 style="font-family: Arial, Helvetica, sans-serif">
+              Blog de Noticias
+            </h2>
+            <h3 style="font-family: Arial, Helvetica, sans-serif">
+              Temas de Salud y Bienestar
+            </h3>
+            <!-- Lista <ul> de temas relacionados con salud y alimentación -->
+            <ul>
+              <li style="font-family: Arial, Helvetica, sans-serif">
+                Nutrición
+              </li>
+              <li style="font-family: Arial, Helvetica, sans-serif">
+                Ejercicio Físico
+              </li>
+              <li style="font-family: Arial, Helvetica, sans-serif">
+                Salud Mental
+              </li>
+              <li style="font-family: Arial, Helvetica, sans-serif">
+                Recetas Saludables
+              </li>
+              <li style="font-family: Arial, Helvetica, sans-serif">
+                Consejos para el Bienestar
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- PRIMERA NOTICIA-->
+        <section
+          style="
+            background-color: rgba(132, 213, 132, 0.8);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <!-- Título de la primera noticia -->
+          <h3
+            style="
+              color: white;
+              background-color: #046a52;
+              padding: 15px;
+              margin-bottom: 20px;
+              text-align: center;
+              font-family: Arial, Helvetica, sans-serif;
+            "
+          >
+            La importancia del desayuno
+          </h3>
+          <!-- Contenedor flex para imagen y contenido -->
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 20px;
+              flex-wrap: wrap;
+            "
+          >
+            <!-- Imagen de la noticia -->
+            <div style="flex: 0 0 300px; text-align: center">
+              <img
+                src="img-home/La-importancia-del-desayuno.jpg"
+                alt="Desayuno Saludable"
+                style="width: 280px; height: 140px; object-fit: cover"
+              />
+            </div>
+            <div style="flex: 1; min-width: 300px; margin: 0; padding: 0">
+              <p
+                style="
+                  text-align: justify;
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 15px;
+                  margin-top: 0;
+                "
+              >
+                El desayuno es la comida más importante del día, ya que aporta
+                la energía necesaria para iniciar la jornada con vitalidad y
+                mantener un buen rendimiento físico e intelectual. Se recomienda
+                incluir lácteos, cereales y frutas, evitando alimentos con alto
+                contenido de azúcares refinados y grasas saturadas. Mantener la
+                variedad en las opciones de desayuno contribuye al bienestar
+                físico y mental.
+              </p>
+              <!-- Botón "Ver Más" que dirige a la página fuente -->
+              <a
+                style="
+                  color: #046a52;
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin: 0;
+                "
+                href="https://grupogamma.com/la-importancia-del-desayuno"
+                target="_blank"
+              >
+                <b>Ver Más</b></a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- SEGUNDA NOTICIA-->
+        <section
+          style="
+            background-color: #a8e6cfcc;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <!-- Título de la segunda noticia -->
+          <h3
+            style="
+              color: white;
+              background-color: #046a52;
+              padding: 15px;
+              margin-bottom: 20px;
+              text-align: center;
+              font-family: Arial, Helvetica, sans-serif;
+            "
+          >
+            Beneficios del deporte para la salud
+          </h3>
+          <!-- Contenedor flex para imagen y contenido -->
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 20px;
+              flex-wrap: wrap;
+            "
+          >
+            <!-- Imagen de la segunda noticia -->
+            <div style="flex: 0 0 300px; text-align: center">
+              <img
+                src="img-home/infografia-beneficios-del-deporte-para-la-salud-4.jpg"
+                alt="Ejercicio Físico"
+                style="width: 280px; height: 150px; object-fit: cover"
+              />
+            </div>
+            <div style="flex: 1; min-width: 300px; margin: 0; padding: 0">
+              <p
+                style="
+                  text-align: justify;
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 15px;
+                  margin-top: 0;
+                "
+              >
+                El ejercicio físico regular es fundamental para mantener una
+                buena salud y prevenir diversas enfermedades. Entre sus
+                beneficios se incluyen la mejora de la salud cardiovascular, el
+                fortalecimiento muscular, el control del peso corporal y la
+                reducción del estrés. Además, el ejercicio libera endorfinas,
+                conocidas como las hormonas de la felicidad, que contribuyen a
+                mejorar el estado de ánimo y la calidad del sueño.
+              </p>
+              <!-- Botón "Ver Más" para la segunda noticia-->
+              <a
+                style="
+                  color: #046a52;
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin: 0;
+                "
+                href="https://blog.previntegral.com/es/noticias/beneficios-del-deporte-para-la-salud"
+                target="_blank"
+              >
+                <b>Ver Más</b></a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- TERCERA NOTICIA-->
+        <section
+          style="
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <!-- Título de la tercera noticia -->
+          <h3
+            style="
+              color: white;
+              background-color: #046a52;
+              padding: 15px;
+              margin-bottom: 20px;
+              text-align: center;
+              font-family: Arial, Helvetica, sans-serif;
+            "
+          >
+            Alimentación saludable para el bienestar mental
+          </h3>
+          <!-- Contenedor flex para imagen y contenido -->
+          <div
+            style="
+              display: flex;
+              align-items: flex-start;
+              gap: 20px;
+              flex-wrap: wrap;
+            "
+          >
+            <!-- Imagen de la tercera noticia -->
+            <div style="flex: 0 0 300px; text-align: center">
+              <img
+                src="img-home/dia-obesidad.jpg"
+                alt="Salud Mental"
+                style="width: 280px; height: 150px; object-fit: cover"
+              />
+            </div>
+            <div style="flex: 1; min-width: 300px">
+              <p
+                style="
+                  text-align: justify;
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 15px;
+                "
+              >
+                Una dieta equilibrada no solo beneficia la salud física, sino
+                también la salud mental. Alimentos ricos en ácidos grasos
+                omega-3, como el pescado azul, nueces y semillas, así como
+                frutas y verduras frescas, pueden ayudar a mejorar el estado de
+                ánimo y reducir los síntomas de ansiedad y depresión. Además,
+                mantener una hidratación adecuada y evitar el consumo excesivo
+                de cafeína y alcohol contribuye al bienestar emocional.
+              </p>
+              <!-- Botón "Ver Más" para la tercera noticia -->
+              <a
+                style="
+                  color: #046a52;
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin: 0;
+                "
+                href="https://www.copmadrid.org/web/comunicacion/noticias/alimentos-que-mejoran-la-salud-mental"
+                target="_blank"
+              >
+                <b>Ver Más</b></a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Esto es el pie de página donde estarán los enlaces adicionales y selector de idioma -->
+      <footer style="text-align: center; margin-top: 50px">
+        <hr />
+        <!-- Aquí se organizan los elementos del footer horizontalmente usando flexbox -->
+        <div
+          style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap"
+        >
+          <!-- Lista desordenada <ul> para enlaces adicionales -->
+          <ul
+            style="
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              display: flex;
+              gap: 15px;
+            "
+          >
+            <!-- Enlaces en negrita usando etiqueta <b> -->
+            <li style="font-family: Arial, Helvetica, sans-serif">
+              <a href="faq.html" style="color: #046a52"
+                ><b>Preguntas frecuentes</b></a
+              >
+            </li>
+            <li style="font-family: Arial, Helvetica, sans-serif">
+              <a href="privacidad.html" style="color: #046a52"
+                ><b>Política de privacidad</b></a
+              >
+            </li>
+            <li style="font-family: Arial, Helvetica, sans-serif">
+              <a href="terminos.html" style="color: #046a52"
+                ><b>Términos y condiciones</b></a
+              >
+            </li>
+          </ul>
+          <!-- Selector de idioma usando dropdown, aparece los idiomas "Español e Inglés" -->
+          <div style="display: flex; align-items: center; gap: 5px">
+            <label
+              style="font-family: Arial, Helvetica, sans-serif"
+              for="idioma"
+              >Idioma:</label
+            >
+            <select id="idioma" name="idioma">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+          <!-- Aqui se agrega el copyright jeje -->
+          <p style="font-family: Arial, Helvetica, sans-serif; margin: 0">
+            &copy; 2025 Salud Vital. Todos los derechos reservados.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

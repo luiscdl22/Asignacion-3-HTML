@@ -1,53 +1,369 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Contáctanos - Salud Vital</title>
-</head>
-<body>
-  <!-- Menú de navegación igual en todas las páginas -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="registro.html">Registro</a></li>
-      <li><a href="contacto.html">Contáctanos</a></li>
-    </ul>
-  </nav>
+  <head>
+    <!-- Encabezado de la página-->
+    <meta charset="UTF-8" />
+    <title>Contáctanos - Salud Vital</title>
+    <link rel="icon" type="image/x-icon" href="img-home/logo.ico" />
+  </head>
 
-  <!-- Contenido principal Contactanos -->
-  <main>
-    <!-- Título principal de la página: Salud Vital -->
+  <!-- Fondo con color degradado verde-->
+  <body
+    style="
+      color: #046a52;
+      background: linear-gradient(to bottom, #a8e6cf, #dcedc1, #a8e6cf);
+    "
+  >
+    <div style="width: 80%; margin: 0 auto">
+      <!-- Encabezado con el título principal "Salud Vital" -->
+      <header>
+        <h1
+          style="
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+          "
+        >
+          Salud Vital
+        </h1>
+      </header>
 
-    <!-- Contenedores de información de los miembros del equipo -->
-    <!-- Cada contenedor debe tener:
-         - Fondo distinto al fondo principal de la página
-         - Imagen del miembro
-         - Nombre
-         - Cédula
-         - Grupo
-         - Carrera
-         - Descripción (opcional)
-      -->
-    <!-- Copia este bloque y repite para cada miembro -->
-    <!-- <div class="miembro">
-           ...información miembro...
-         </div>
-    -->
-  </main>
+      <!-- Navegación principal con menú para todas las páginas -->
+      <nav
+        style="
+          background-color: #046a52;
+          padding: 10px;
+          margin-bottom: 20px;
+          text-align: center;
+        "
+      >
+        <!-- Lista de navegación usando <ul> (Home, Blog, Registro, Contactanos) -->
+        <ul
+          style="
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+          "
+        >
+          <!-- Enlaces en negrita usando etiqueta <b>-->
+          <li style="display: inline; margin-right: 15px">
+            <a href="HOME.html" style="color: white"><b>Home</b> </a>
+          </li>
+          <li style="display: inline; margin-right: 15px">
+            <a href="BLOG.html" style="color: white"><b>Blog</b> </a>
+          </li>
+          <li style="display: inline; margin-right: 15px">
+            <a href="REGISTRO.html" style="color: white"><b>Registro</b> </a>
+          </li>
+          <li style="display: inline; margin-right: 15px">
+            <a href="CONTACTO.html" style="color: white"><b>Contáctanos</b> </a>
+          </li>
+        </ul>
+      </nav>
 
-  <!-- Pie de página igual en todas las páginas -->
-  <footer>
-    <ul>
-      <li><a href="faq.html">Preguntas frecuentes</a></li>
-      <li><a href="privacidad.html">Política de privacidad</a></li>
-      <li><a href="terminos.html">Términos y condiciones</a></li>
-    </ul>
-    <label for="idioma">Idioma:</label>
-    <select id="idioma" name="idioma">
-      <option value="es">Español</option>
-      <option value="en">English</option>
-    </select>
-  </footer>
-</body>
+      <!-- Contenido principal de la página -->
+      <main>
+        <!-- Sección introductoria del equipo -->
+        <section>
+          <h2
+            style="
+              text-align: center;
+              font-family: Arial, Helvetica, sans-serif;
+              margin-bottom: 30px;
+            "
+          >
+            Nuestro Equipo
+          </h2>
+          <p
+            style="
+              text-align: center;
+              font-family: Arial, Helvetica, sans-serif;
+              margin-bottom: 40px;
+              font-size: 18px;
+            "
+          >
+            Conoce a los profesionales que integran el equipo de Salud Vital
+          </p>
+        </section>
+
+        <!-- sección del 1 integrante -->
+        <section
+          style="
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <!-- Layout flex para imagen y datos del integrante -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 30px;
+              flex-wrap: wrap;
+            "
+          >
+            <div style="text-align: center; min-width: 200px">
+              <img
+                src="img-Contactos/Luis.png"
+                alt="Foto del integrante 1"
+                style="width: 200px; height: 200px; object-fit: cover"
+              />
+            </div>
+
+            <div style="flex: 1; min-width: 300px">
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 10px;
+                "
+              >
+                <strong>Nombre:</strong> Luis Deleon
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 10px;
+                "
+              >
+                <strong>Cédula:</strong> 3-750-2425
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 10px;
+                "
+              >
+                <strong>Grupo:</strong> 1GS123
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 15px;
+                "
+              >
+                <strong>Carrera:</strong> Lic. en Desarrollo y Gestión de
+                Software
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  text-align: justify;
+                  line-height: 1.5;
+                "
+              >
+                Estudiante de la Universidad Tecnológica de Panamá. Tengo 22
+                años. Mis intereses incluyen la programación, el diseño web,
+                jugar videojuegos y.....Dormir.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- sección del 2 integrante -->
+        <section
+          style="
+            background-color: rgba(255, 240, 150, 0.95);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <!-- Layout flex para imagen y datos del integrante -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 30px;
+              flex-wrap: wrap;
+            "
+          >
+            <div style="text-align: center; min-width: 200px">
+              <img
+                src="img-home/member2.jpg"
+                alt="Foto del Integrante 2"
+                style="width: 200px; height: 200px; object-fit: cover"
+              />
+            </div>
+            <div style="flex: 1; min-width: 300px">
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 10px;
+                "
+              >
+                <strong>Nombre:</strong> Traly Amaro
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 10px;
+                "
+              >
+                <strong>Cédula:</strong> E-8-215994
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 10px;
+                "
+              >
+                <strong>Grupo:</strong> 1GS123
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 15px;
+                "
+              >
+                <strong>Carrera:</strong> Lic. en Desarrollo y Gestión de
+                Software
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  text-align: justify;
+                  line-height: 1.5;
+                "
+              >
+                Estudiante de Licenciatura en Desarrollo y Gestión de Software,
+                enfocado en análisis de sistemas y gestión de proyectos.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- seccion del 3 integrante -->
+        <section
+          style="
+            background-color: rgba(255, 200, 220, 0.95);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <!-- Layout flex para imagen y datos del integrante -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 30px;
+              flex-wrap: wrap;
+            "
+          >
+            <div style="text-align: center; min-width: 200px">
+              <img
+                src="img-Contactos/Moises Murgas.jpeg"
+                alt="Foto del integrante 3"
+                style="width: 200px; height: 200px; object-fit: cover"
+              />
+            </div>
+            <div style="flex: 1; min-width: 300px">
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 10px;
+                "
+              >
+                <strong>Nombre:</strong> Moises Murgas
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 10px;
+                "
+              >
+                <strong>Cédula:</strong> 8-1003-179
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 10px;
+                "
+              >
+                <strong>Grupo:</strong> 1GS123
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  margin-bottom: 15px;
+                "
+              >
+                <strong>Carrera:</strong> Lic. en Desarrollo y Gestión de
+                Software
+              </p>
+              <p
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  text-align: justify;
+                  line-height: 1.5;
+                "
+              >
+                Estudiante de la Universidad Tecnológica de Panamá. Tengo 21
+                años. Actualmente, resido en la provincia de Panamá Oeste. Entre
+                mis intereses se encuentran la programación y el fútbol. Oeste.
+                Entre mis intereses se encuentran la programación y el fútbol
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Esto es el pie de página donde estarán los enlaces adicionales y selector de idioma -->
+      <footer style="text-align: center; margin-top: 50px">
+        <hr />
+        <!-- Aquí se organizan los elementos del footer horizontalmente usando flexbox -->
+        <div
+          style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap"
+        >
+          <!-- Enlaces adicionales: preguntas frecuentes, privacidad-->
+          <ul
+            style="
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              display: flex;
+              gap: 15px;
+            "
+          >
+            <!-- Enlaces en negrita usando etiqueta <b> -->
+            <li style="font-family: Arial, Helvetica, sans-serif">
+              <a href="faq.html" style="color: #046a52"
+                ><b>Preguntas frecuentes</b></a
+              >
+            </li>
+            <li style="font-family: Arial, Helvetica, sans-serif">
+              <a href="privacidad.html" style="color: #046a52"
+                ><b>Política de privacidad</b></a
+              >
+            </li>
+            <li style="font-family: Arial, Helvetica, sans-serif">
+              <a href="terminos.html" style="color: #046a52"
+                ><b>Términos y condiciones</b></a
+              >
+            </li>
+          </ul>
+          <!-- Selector de idioma usando dropdown, aparece los idiomas "Español e Inglés" -->
+          <div style="display: flex; align-items: center; gap: 5px">
+            <label
+              style="font-family: Arial, Helvetica, sans-serif"
+              for="idioma"
+              >Idioma:</label
+            >
+            <select id="idioma" name="idioma">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+          <!-- Aqui se agrega el copyright jeje -->
+          <p style="font-family: Arial, Helvetica, sans-serif; margin: 0">
+            &copy; 2025 Salud Vital. Todos los derechos reservados.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
